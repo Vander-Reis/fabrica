@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #D3D3D3;
+}
+
+a{
+    text-decoration: none;
+}
+
+.box{
+    width: 100vw;
+    height: 100vh;
+    background: #D3D3D3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    visibility: visible;
+    opacity: 1;
+    
+}
+
+.results {
+    width: 500px;
+    /* height: 300px; */
+    background: #fff;
+
+    border-radius: 0.25rem;
+
+    text-align: center;
+
+    padding: 1rem;
+    
+}
+
+.results h2 {
+    margin-bottom: 2rem;
+}
+
+.results p {
+    margin-bottom: 2rem;
+}
+
+.button {
+    background: hsl(220, 65%, 50%);
+    color: hsl(0, 0%, 98%);
+    height: 3.5rem;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 2rem;
+    border-radius: 0.25rem;
+    font: 500 1rem 'Poppins';
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background: hsl(220, 57%, 53%);
+}
+
+.header {
+    height: 25vh;
+    background: hsl(220, 65%, 50%);
+}
+
+.formulario {
+    max-width: 1000px;
+    margin: auto;
+    background: #fff;
+
+    margin-top: -2rem;
+    border-radius: 0.25rem;
+    padding: 2rem;
+    
+
+}
+
+.description {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.question {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.question {
+    margin-top: 2rem;
+}
+
+#answer {
+    outline: none;
+    border: none;
+
+    border-bottom: 1px solid hsl(220, 65%, 50%);
+
+    width: 80%;
+
+    margin-top: 2rem;
+}
+
+.enviar {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.buttons {
+    text-align: center;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size:16px;
+}
+
+form {
+    list-style: none;
+}
+
+.image {
+   text-align: center;
+}
