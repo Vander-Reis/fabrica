@@ -58,7 +58,9 @@
   ![image](https://user-images.githubusercontent.com/77352309/145575295-89538ed9-2d90-483d-92da-91be8e15aea5.png)
   
   <h2><img src="https://img.icons8.com/external-dreamstale-green-shadow-dreamstale/64/000000/external-list-fitness-dreamstale-green-shadow-dreamstale.png"/></h2>
-  ![image](https://user-images.githubusercontent.com/77352309/145575476-a7ca1881-accb-4b4e-bc29-66e8baa03ed6.png)
+  
+  ![image](https://user-images.githubusercontent.com/77352309/145576382-9840a43a-96a6-47b4-bdae-966305dbe4f8.png)
+
 
   
   
