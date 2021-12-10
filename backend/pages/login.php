@@ -44,7 +44,7 @@ if (isset($_POST['userEmail']) || isset($_POST['userPass'])) {
 <!DOCTYPE html>
 
 <head>
-    <title>Criar Sala - Rocket.Q</title>
+    <title>Login Fábrica</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
