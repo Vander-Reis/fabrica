@@ -20,7 +20,7 @@
 <body>
     <div id="home" class="content">
         <header>
-            <a href="/fabrica-de-software-backend/">
+            <a href="/fabrica/">
                 Fábrica de software
             </a>
         </header>
@@ -66,6 +66,8 @@
                         <label for="email" class="sr-only">E-mail</label>
                         <input type="email" name="userEmail" id="email" placeholder="Infome seu e-mail" required>
 
+                        <label for="whats" class="sr-only">Whats</label>
+                        <input type="tel" required="required" maxlength="15" name="userWhats" id="whats" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" placeholder="siga o exeplo: (34) 99999-9999"/>
 
                         <label for="password" class="sr-only">Senha</label>
                         <input type="password" name="userPass" id="password" placeholder="Infome sua senha" required>
@@ -80,6 +82,7 @@
             </div>
         </main>
     </div>
+ 
 </body>
 
 </html>

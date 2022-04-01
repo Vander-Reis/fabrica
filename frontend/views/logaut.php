@@ -6,6 +6,6 @@ if(!isset($_SESSION)) {
 
 session_destroy();
 
-header('location: /fabrica-de-software-backend');
+header('location: /fabrica/');
 
 ?>

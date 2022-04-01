@@ -2,6 +2,8 @@
 // abre e fecha o menu quando clicar no icone: hamburguer
 const nav = document.querySelector('#header nav')
 const toggle = document.querySelectorAll('nav .toggle')
+let darkmode = document.querySelector('.dark-mode')
+let body = document.querySelector('body')
 
 for (const element of toggle) {
   element.addEventListener('click', function () {
@@ -119,3 +121,30 @@ window.addEventListener('scroll', function () {
   backToTop()
   activateMenuAtCurrentSection()
 })
+
+// darkmode aqui
+
+darkmode.addEventListener('click', () => {
+  if(body.classList == "") {
+    body.classList.add('darkmode');
+    darkmode.setAttribute('src', './assets/sun.png');
+    localStorage.setItem("background", "darkmode");
+  } else {
+    body.classList.remove('darkmode');
+    darkmode.setAttribute('src', './assets/moon.png');
+    localStorage.setItem("background", "");
+  }
+})
+
+
+document.addEventListener("DOMContentLoaded", () => {
+//when loading document
+  var background = localStorage.getItem("background");
+// get localStorage var background
+  if (background) {
+// if its not null and empty
+    document.body.className += background;
+//add class to body
+  }
+});
+

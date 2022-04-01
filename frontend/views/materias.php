@@ -63,7 +63,7 @@
 
           <div class="cards grid">
             <div class="card">
-              <a href="/fabrica-de-software-backend/frontend/views/form-facil.php">
+              <a href="/fabrica/frontend/views/form-facil.php">
                 <img src="https://i.pinimg.com/736x/a2/cf/a2/a2cfa2edbae03130a44ea593efdf95e8.jpg" alt="Dificuldade fácil" />
                 <h3>Exercícios matemática</h3>
                 <p>

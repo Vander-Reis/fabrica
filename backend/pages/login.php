@@ -32,7 +32,7 @@ if (isset($_POST['userEmail']) || isset($_POST['userPass'])) {
 
         
 
-            header('Location: /fabrica-de-software-backend/frontend/views/materias.php');
+            header('Location: /fabrica/frontend/views/materias.php');
         } else {
             echo "Falha ao logar! E-mail ou senha incorretos.";
         }
@@ -63,7 +63,7 @@ if (isset($_POST['userEmail']) || isset($_POST['userPass'])) {
 <body>
     <div id="home" class="content">
         <header>
-            <a href="/fabrica-de-software-backend/">
+            <a href="/fabrica/">
                 Fábrica de software
             </a>
         </header>

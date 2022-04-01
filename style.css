@@ -27,7 +27,7 @@ img {
 
   /* colors */
 
-  --hue: 220;
+  --hue: 240;
   /* HSL color mode */
 
   --base-color: hsl(var(--hue) 65% 50%);
@@ -59,6 +59,14 @@ body {
   color: var(--text-color);
   background: var(--body-color);
   -webkit-font-smoothing: antialiased;
+}
+
+body.darkmode {
+  --title-color: hsl(210, 10%, 62%);
+  --title-color-light: hsl(210, 15%, 35%);
+  --text-color-richer: hsl(210, 50%, 72%);
+  --text-color-highlight: hsl(25, 70%, 45%);
+  --body-color: #202122;
 }
 
 .title {
@@ -173,6 +181,11 @@ nav ul li {
 nav ul li a {
   transition: color 0.2s;
   position: relative;
+}
+
+nav ul li img {
+  width: 25px;
+  cursor: pointer;
 }
 
 nav ul li a:hover,
@@ -311,9 +324,7 @@ nav.show div.icon-close {
 
 /* ========== ABOUT ============== */
 
-#about {
-  background: white;
-}
+
 
 #about .container {
   margin: 0;
@@ -383,9 +394,7 @@ nav.show div.icon-close {
 
 /* ============ TESTIMONIALS ================ */
 
-#testimonials {
-  background: white;
-}
+
 
 #testimonials .container {
   margin-left: 0;
