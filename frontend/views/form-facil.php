@@ -53,7 +53,7 @@ include('./protect.php');
 
         <?php
 
-        $conexao = mysqli_connect("127.0.0.1:3306", "root", "root", "db_fabrica")
+        $conexao = mysqli_connect("127.0.0.1:3306", "root", "", "db_fabrica")
           or die("Não foi possível fazer a conexão");
         $consulta = "SELECT p.id, p.descricao, p.gabarito, p.id_materia, m.nome materia FROM tb_pergunta p, tb_materia m WHERE p.id_materia = m.id AND m.id = 1";
         $resultado = mysqli_query($conexao, $consulta);

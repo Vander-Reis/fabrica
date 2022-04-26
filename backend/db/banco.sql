@@ -46,6 +46,7 @@ primary key (id),
 constraint foreign key(id_materia) references tb_materia(id) on delete cascade on update cascade
 );
 
+
 create table tb_resposta(
 id int auto_increment not null,
 letra char(1),
@@ -73,3 +74,4 @@ data date not null,
 primary key (id),
 constraint foreign key(id_login) references tb_login(id) on delete cascade on update cascade
 );
+
