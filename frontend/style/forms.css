@@ -58,27 +58,30 @@ a{
     border-radius: 0.25rem;
     font: 500 1rem 'Poppins';
     transition: background 0.3s;
+    outline: none;
+    border: none;
 }
+
 
 .button:hover {
     background: hsl(220, 57%, 53%);
 }
 
 .header {
-    height: 25vh;
+    height: 50vh;
     background: hsl(220, 65%, 50%);
+  
 }
 
 .formulario {
     max-width: 1000px;
     margin: auto;
+    margin-bottom: 10rem;
     background: #fff;
 
-    margin-top: -2rem;
-    border-radius: 0.25rem;
+    margin-top: -12rem;
+    border-radius: 2rem;
     padding: 2rem;
-    
-
 }
 
 .description {
@@ -128,4 +131,9 @@ form {
 
 .image {
    text-align: center;
+}
+
+tbody {
+    display: grid;
+    gap: 1rem;
 }

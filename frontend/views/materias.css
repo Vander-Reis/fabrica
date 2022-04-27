@@ -276,13 +276,12 @@
   .card img {
     
     margin-bottom: 1.5rem;
-    transition: width 0.3s;
+    transition: all 700ms;
     clip-path: circle();
   }
   
   .card:hover img {
-    width: 200px;
-    transition: width 0.3s;
+    transform: scale(1);
   }
   
   .card a {

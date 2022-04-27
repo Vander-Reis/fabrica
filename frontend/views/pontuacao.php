@@ -16,7 +16,7 @@
 
     session_start();
 
-    $conexao = mysqli_connect("127.0.0.1:3306", "root", "root", "db_fabrica")
+    $conexao = mysqli_connect("127.0.0.1:3306", "root", "", "db_fabrica")
         or die("Não foi possível fazer a conexão");
     $consulta = "SELECT id, descricao, gabarito, id_materia from tb_pergunta where id_materia = '1'";
     $resultado = mysqli_query($conexao, $consulta);
@@ -59,7 +59,7 @@
     echo  "<p class='hits'>Respostas certas: $pontuacao</p>";
     echo  "<p class='error'>Respostas erradas: $erros</p>";
     echo  "<div class='buttons'>";
-    echo  "<a class='button' href='/fabrica-de-software-backend/'> Voltar ao menu</a>";
+    echo  "<a class='button' href='/fabrica/'> Voltar ao menu</a>";
     echo  "</div>";
     echo   "</div>";
     echo   "</div>";

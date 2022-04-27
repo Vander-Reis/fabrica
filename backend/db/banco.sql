@@ -17,7 +17,6 @@ INSERT INTO tb_login(nome, idade, email, senha, whatsapp, id_escola)
 VALUES ('Vander', '22', 'Teste@2017.com', '123', '(34) 99196-5050', 1);
 
 
-
 select * from tb_login;
 
 create table tb_escola(

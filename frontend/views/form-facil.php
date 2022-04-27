@@ -37,7 +37,7 @@ include('./protect.php');
       <p> Bem vindo <b> <?php echo $_SESSION['nome']  ?> !</b> </p>
 
       <p class="description">
-        São questões de matemática do ensino médio que abordam diversos temas como progressão aritmética, teorema de Pitágoras, análise combinatória, função de segundo grau e até mesmo fundamentos básicos de matemática como comparação e operação com frações, raciocínio lógico e regra de três.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos beatae omnis itaque libero velit ipsum molestiae vitae minima sapiente voluptatum aperiam nisi autem dolore laboriosam quo provident iure, reprehenderit facilis!
       </p>
     </div>
 
@@ -53,9 +53,18 @@ include('./protect.php');
 
         <?php
 
+        if(isset($_GET['id']) == true){
+
+          $idPergunta = $_GET['id'];  
+
+        } else {
+          header('Location: /fabrica/');
+        }
+
+
         $conexao = mysqli_connect("127.0.0.1:3306", "root", "", "db_fabrica")
           or die("Não foi possível fazer a conexão");
-        $consulta = "SELECT p.id, p.descricao, p.gabarito, p.id_materia, m.nome materia FROM tb_pergunta p, tb_materia m WHERE p.id_materia = m.id AND m.id = 1";
+        $consulta = "SELECT p.id, p.descricao, p.gabarito, p.id_materia, m.nome materia FROM tb_pergunta p, tb_materia m WHERE p.id_materia = m.id AND m.id = $idPergunta";
         $resultado = mysqli_query($conexao, $consulta);
         $num_perguntas = mysqli_num_rows($resultado);
 
@@ -76,18 +85,15 @@ include('./protect.php');
         echo "</table>";
         mysqli_close($conexao);
         ?>
-
+        <div class="enviar">
         <input type="submit" value="Enviar" class="button" id="submit">
+          <a href="logaut.php" class="button">Sair</a>
+        </div>
       </form>
 
-      <div class="enviar">
-        <a href="logaut.php">Sair</a>
-      </div>
+      
     </div>
   </div>
-
-
-
 
   <script src="../src/form-facil.js"></script>
 </body>

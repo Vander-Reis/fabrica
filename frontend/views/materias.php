@@ -63,7 +63,7 @@
 
           <div class="cards grid">
             <div class="card">
-              <a href="/fabrica/frontend/views/form-facil.php">
+              <a href="/fabrica/frontend/views/form-facil.php?id=1">
                 <img src="https://i.pinimg.com/736x/a2/cf/a2/a2cfa2edbae03130a44ea593efdf95e8.jpg" alt="Dificuldade fácil" />
                 <h3>Exercícios matemática</h3>
                 <p>
@@ -73,7 +73,7 @@
             </div>
 
             <div class="card">
-              <a href="./login/login.html">
+              <a href="/fabrica/frontend/views/form-facil.php?id=2">
                 <img src="https://image.freepik.com/vetores-gratis/objetos-de-laboratorio-de-ciencias_23-2148488312.jpg" alt="Dificildade media" />
                 <h3>Exercícios ciências</h3>
                 <p>
@@ -83,7 +83,7 @@
             </div>
 
             <div class="card">
-              <a href="./login/login.html">
+              <a href="/fabrica/frontend/views/form-facil.php?id=3">
                 <img
                   src="./materias/geo.jpg"
                   alt="Dificildade difícil"
@@ -98,7 +98,7 @@
 
             
             <div class="card">
-              <a href="./views/form-facil.html">
+              <a href="/fabrica/frontend/views/form-facil.php?id=4">
                 <img src="./materias/port.jpg" alt="Dificuldade fácil" />
                 <h3>Exercícios de português</h3>
                 <p>
@@ -108,7 +108,7 @@
             </div>
 
             <div class="card">
-              <a href="./login/login.html">
+              <a href="/fabrica/frontend/views/form-facil.php?id=5">
                 <img src="./materias/Artes.webp" alt="Dificildade media" />
                 <h3>Exercícios de artes</h3>
                 <p>
@@ -118,7 +118,7 @@
             </div>
 
             <div class="card">
-              <a href="./login/login.html">
+              <a href="/fabrica/frontend/views/form-facil.php?id=6">
                 <img
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxVr902LaWXnsDihrH9V12ToNzn052vA-ZYi-l1vrzLWJuiYe_hYxcq_V36YGAGpfQk78&usqp=CAU"
                   alt="Dificildade difícil"
@@ -139,7 +139,7 @@
 
 </main>
 
-    <script src="main.js"></script>
+  <script src="main.js"></script>
 
 </body>
 </html>
