@@ -77,8 +77,12 @@ include('./protect.php');
           $resultado_respostas = mysqli_query($conexao, $consulta_resposta);
           $num_respostas = mysqli_num_rows($resultado_respostas);
           // para cada resposta
+
           for ($j = 0; $j < $num_respostas; $j++) {
+
+        
             list($id_resposta, $letra_resposta, $descricao_resposta) = mysqli_fetch_row($resultado_respostas);
+            
             echo "<tr><td width='45px'><input type='radio' name='rd" . $id_pergunta . "' id='rd" . $id_pergunta . "" . $id_resposta . "' value='". $letra_resposta ."'/> $letra_resposta)</td><td>$descricao_resposta</td></tr>";
           }
         }
